@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+/* header styles_________
+_________*/
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background:white;
+    color:#004f88;
+}
+
+.header-item{
+    padding:10px;
+}
+.header-img{
+}
+
+/*navigation bar styles________
+_________*/
+
+.navbar a{
+  height:64px;
+  color:white;
+  background:#004f88;
+  font-size:1.5em;    
+  display:block;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  transition:background 0.4s;
+  margin-top:10px;    
+}
+
+.navbar a:hover{
+  background:white;
+  color:#004f88;
+}
+.navbar ul{
+  list-style:none;
+  display:flex;
+}
+
+.navbar li{
+  width:100%;
+  text-align:center;
+  position:relative;
+}
+
+.navbar li:hover .submenu > li{
+  display:block;
+  top:0px;
+}
+
+.submenu li{
+  display:none;
+  position:absolute;
+  top:0px;
+}
+
+.submenu{
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:100%;
+  background:#004f88;     
+}
+
+.submenu li{
+  position:relative;   
+}
+
+
+/* Drop Down Menu Styles___________
+________________*/
+
+
+.dropdown{
+    position:relative;
+    display:flex;
+     flex-flow: column wrap;
+    
+}
+.dropdown-content{
+    display:none;
+    display: flex;
+    flex:1;
+    position: absolute;
+    background-color:white;
+    max-width: 200px;
+    z-index:1;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/*section 1 styles__________________
+________________*/
+.section-1{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height:50vh;
+    color: white;
+    text-shadow: 1px 1px black;
+    
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.7)),
+              url(images/Racing_at_Arlington_Park.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+.section-1 a{
+    text-decoration: none;
+    color:lightskyblue;
+}
+
+.section-1-item{
+    max-width:700px;
+    color:white;
+    margin:25px;
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+.section-1-item h2{
+    text-align: center;
+    margin:20px;
+}
+
+
+
+/*section 2 styles______________
+__________________*/
+.section-2 h2{
+    text-align: center;
+    margin:20px;
+    padding:30px;
+    font-size:2em;
+    color:#004f88;
+}
+
+/* services styles______________
+__________________*/
+.service-box{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between
+}
+
+.service-item{
+    width:300px;
+    line-height: 1.75;
+    border-top:2px solid #004f88;
+    padding:20px;
+    font-size: 1em;
+    color:#004f88;
+}
+
+.service-item h3{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#004f88;
+}
+/*footer styles_________________
+_______________*/
+.footer{
+    display:flex;
+    background:#b8b8b8;
+    justify-content: center;
+    text-align: center;
+    color:#4295D1;  
+    height:20vh;
+}
+
+.footer-item{
+    margin:20px;
+    padding:10px;
+    line-height: 1.5;
+}
+
+/* Global Stlyes_____________
+_____________*/
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Media Queries_____________
+____________*/
+ 
